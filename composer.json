@@ -1,0 +1,32 @@
+{
+  "name": "icedream/composer-post-create-project-cmd-helper",
+  "description": "Provides hook scripts to assist with base projects to further tweak instances set up from it.",
+  "type": "project",
+  "homepage": "https://github.com/icedream/composer-post-create-project-cmd-helper",
+  "require-dev": {
+    "composer/composer": "*",
+    "spatie/temporary-directory": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Icedream\\ComposerPostCreateProjectCmdHelper\\": "src/",
+      "Icedream\\ComposerPostCreateProjectCmdHelper\\Test\\": "test/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Carl Kittelberger",
+      "email": "icedream@icedream.pw"
+    }
+  ],
+  "require": {},
+  "scripts": {
+    "test": "./test/composer_create_project.sh",
+    "env": "sh -c export",
+    "test2": "Icedream\\ComposerPostCreateProjectCmdHelper\\Test\\CreateProject::run"
+  },
+  "scripts-descriptions": {
+    "test": "Test creating a project based on this helper."
+  }
+}
