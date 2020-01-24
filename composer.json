@@ -1,7 +1,7 @@
 {
   "name": "icedream/composer-post-create-project-cmd-helper",
   "description": "Provides hook scripts to assist with base projects to further tweak instances set up from it.",
-  "type": "project",
+  "type": "library",
   "homepage": "https://github.com/icedream/composer-post-create-project-cmd-helper",
   "require-dev": {
     "composer/composer": "*",
