@@ -125,7 +125,11 @@ class Setup
 			self::getHelperComposerJson()['name'], // this is composer-post-create-project-cmd-helper
 		]);
 
-		return $this->update();
+		return $this->update(array_merge(
+			$this->ensureArray('remove-require'),
+			$this->ensureArray('remove-require-dev'),
+			self::getHelperComposerJson()['name'],
+		));
 	}
 
 	public function removeHelperFromComposerJson()
