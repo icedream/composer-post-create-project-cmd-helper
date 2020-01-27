@@ -128,7 +128,7 @@ class Setup
 		return $this->update(array_merge(
 			$this->ensureArray('remove-require'),
 			$this->ensureArray('remove-require-dev'),
-			self::getHelperComposerJson()['name'],
+			[self::getHelperComposerJson()['name']],
 		));
 	}
 
