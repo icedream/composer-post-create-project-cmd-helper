@@ -201,7 +201,7 @@ class Setup
 		$install->setUpdate(true);
 		if (!empty($packageWhitelist))
 		{
-			$install->setUpdateWhitelist($allPackages);
+			$install->setUpdateWhitelist($packageWhitelist);
 		}
 		$status = $install->run();
 		if ($status !== 0) {
